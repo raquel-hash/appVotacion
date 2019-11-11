@@ -1,0 +1,52 @@
+
+<div class="card-group">
+  <div class="card" >
+    <img src="assets/images/i1.jpeg" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">Participante 1</h5>
+      <button type="button" (click)="votar(1)" class="btn btn-info btn-lg">Votar</button>
+      <h5>Votos: {{c}}</h5>
+    </div>
+  </div>
+  <div class="card" >
+    <img src="assets/images/i2.jpeg" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">Participante 2</h5>
+      <button type="button" (click)="votar(2)" class="btn btn-info btn-lg">Votar</button>
+      <h5>Votos: {{c1}}</h5>
+    </div>
+  </div>
+  <div class="card" >
+    <img src="assets/images/i3.jpeg" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">Participante 3</h5>
+      <button type="button" (click)="votar(3)" class="btn btn-info btn-lg">Votar</button>
+      <h5>Votos: {{c2}}</h5>
+    </div>
+  </div>
+</div>
+
+<h1>Votos Totales: {{votosTotales}} </h1><br>
+<h1>Total Personas: {{totalPeople}} </h1>
+<!--
+<div style="display: block">
+  <canvas width="700" height="400" baseChart
+
+       [data]="pieChartData"
+        [labels]="pieChartLabels"
+        [chartType]="pieChartType">
+  </canvas>
+</div>
+
+<canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels"
+        [options]="lineChartOptions" [legend]="lineChartLegend" [chartType]="lineChartType">
+</canvas>-->
+<div style="display: block">
+
+  <canvas id="myChart" height="200" width="500"
+          baseChart
+          [data]="Data"
+          [labels]="label"
+          [chartType]="type">
+  </canvas>
+</div>
