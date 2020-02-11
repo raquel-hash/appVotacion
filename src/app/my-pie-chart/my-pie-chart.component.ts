@@ -21,7 +21,7 @@ export class MyPieChartComponent implements OnInit {
    this.votar(this.candidato);
  }
   ngOnInit() {
-    this.votar(this.candidato);
+   // this.votar(this.candidato);
   }
 
   votar(candidato) {
